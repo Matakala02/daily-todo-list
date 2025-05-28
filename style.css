@@ -1,0 +1,68 @@
+.task_container{
+     display: flex;         /* Makes children sit side by side */
+      gap: 20px;             /* Adds space between them */
+      justify-content: center; /*Horizontal centering*/
+}
+.notes-reminder{
+       display: flex;         /* Makes children sit side by side */
+      gap: 20px;             /* Adds space between them */
+      align-items: center;   /*vertical centering*/
+      justify-content: center;  /*Horinzontal centering*/
+}
+body {
+    background-color: #f9f9f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 20px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.task_container > div,
+.notes-reminder .box {
+    background-color: #ffffff;
+    border: 2px solid #dcdcdc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.task_container label,
+.notes-reminder label {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #34495e;
+}
+
+input[type="text"] {
+    width: 150px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="date"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #2ecc71; /* Nice green color for completed tasks */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
