@@ -9,8 +9,6 @@
 <body>
     <h1 style="text-align: center;">Daily Target To-Do-List</h1>
     <div style="text-align: center;">
-      <label>Month:</label>
-    <input type="text">
     <label>Date:</label>
     <input type="date">  
     <br><br> 
@@ -51,16 +49,21 @@
      <div class="notes-reminder">
     <div class="box">
       <label>NOTES</label>
-      <textarea style="width:100%; height:85px; border: solid; resize:none;"></textarea>
+      <textarea style="width:95%; height:85px; border: none; resize:none;" id="notes"></textarea>
     </div>
     <div class="box">
       <label>REMINDER</label>
-      <textarea style="width:100%; height:85px; border: solid; resize:none;"></textarea>
+      <textarea style="width:95%; height:85px; border: none; resize:none;" id="reminder"></textarea>
     </div>
   </div>
   <div>
+    <div class="buttons">
+    <button style="width: 50px;border: none; border-radius: 5px; background-color: aqua; height: 36px; font-weight:bold ;" id="saveBtn" class="btn" >save</button>
+    <button style="width: 100px;border: none; border-radius: 5px; background-color: aqua; height: 36px; font-weight: bold;" id="downloadBtn" class="btn">Download</button>
+    </div>
     <p style="font-style: italic; text-align: center;">Complete every task you set to become 1% better than you were yester day</p>
   </div> 
-    
+  
+    <script src="todolist.js"></script>
 </body>
 </html>

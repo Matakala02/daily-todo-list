@@ -15,6 +15,15 @@ body {
     color: #333;
     margin: 20px;
 }
+.buttons{
+      display: flex;         /* Makes children sit side by side */
+      gap: 20px;             /* Adds space between them */
+      justify-content: center; /*Horizontal centering*/
+      
+}
+.btn{
+      cursor: pointer;
+}
 
 h1 {
     color: #2c3e50;
@@ -22,11 +31,12 @@ h1 {
 
 .task_container > div,
 .notes-reminder .box {
-    background-color: #ffffff;
-    border: 2px solid #dcdcdc;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  width: 300px; /* make all boxes same width */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .task_container label,
